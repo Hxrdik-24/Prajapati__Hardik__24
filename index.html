@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hardik Prajapati — Cybersecurity &amp; Full-Stack Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">Hardik <span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://www.instagram.com/prajapati__hardik__24/" class="nav-cta">Let's talk</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">BCA · Cybersecurity &amp; Ethical Hacking · Ahmedabad</p>
+        <h1>Building secure systems,<br> then trying to break them<span class="accent-dot">.</span></h1>
+        <p class="hero-lede">I'm Hardik — a first-year BCA student who builds full-stack security tools in Python and Flask, then stress-tests them the way an attacker would. Currently ranked in the top tier of picoCTF 2026, with 118 challenges solved.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View my work</a>
+          <a href="https://github.com/prajapatiHardik2008" target="_blank" rel="noopener" class="btn btn-ghost">GitHub profile ↗</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">118</span>
+            <span class="stat-label">picoCTF challenges solved</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">#2,669</span>
+            <span class="stat-label">picoCTF 2026 global rank</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">shipped security &amp; dev projects</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="graph" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="graph-edges" stroke="url(#edgeGrad)" stroke-width="1.4">
+            <line x1="240" y1="240" x2="90" y2="120" class="edge" style="--d:0"/>
+            <line x1="240" y1="240" x2="370" y2="90" class="edge" style="--d:1"/>
+            <line x1="240" y1="240" x2="400" y2="260" class="edge" style="--d:2"/>
+            <line x1="240" y1="240" x2="330" y2="390" class="edge" style="--d:3"/>
+            <line x1="240" y1="240" x2="120" y2="370" class="edge" style="--d:4"/>
+            <line x1="240" y1="240" x2="70" y2="260" class="edge" style="--d:5"/>
+            <line x1="90" y1="120" x2="370" y2="90" class="edge" style="--d:6"/>
+            <line x1="330" y1="390" x2="120" y2="370" class="edge" style="--d:7"/>
+            <line x1="400" y1="260" x2="330" y2="390" class="edge" style="--d:8"/>
+          </g>
+          <defs>
+            <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#5B8DEF"/>
+              <stop offset="1" stop-color="#2DD4BF"/>
+            </linearGradient>
+          </defs>
+          <g class="graph-nodes">
+            <circle cx="240" cy="240" r="10" class="node node-core"/>
+            <circle cx="90"  cy="120" r="6" class="node" style="--d:0"/>
+            <circle cx="370" cy="90"  r="6" class="node" style="--d:1"/>
+            <circle cx="400" cy="260" r="6" class="node" style="--d:2"/>
+            <circle cx="330" cy="390" r="6" class="node" style="--d:3"/>
+            <circle cx="120" cy="370" r="6" class="node" style="--d:4"/>
+            <circle cx="70"  cy="260" r="6" class="node" style="--d:5"/>
+          </g>
+        </svg>
+        <span class="visual-caption"><span class="caret">&gt;</span> system integrity: verified</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="work">
+    <div class="section-head">
+      <p class="eyebrow">Selected work</p>
+      <h2>Projects I've shipped and kept iterating on</h2>
+      <p class="section-sub">From personal-cloud encryption systems to offline vulnerability scanners — built, deployed, and refined over real usage.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card project-card--lg">
+        <div class="project-top">
+          <span class="project-tag">Flagship</span>
+          <span class="project-status status-live">Live</span>
+        </div>
+        <h3>H-24 Portal</h3>
+        <p>A Flask-based personal security dashboard: port scanner, OTP-protected admin login, IP intelligence, a web terminal (WolfShell-Web), and a digital forensics lab — hardened to an A+ score on securityheaders.com.</p>
+        <ul class="tech-list">
+          <li>Python</li><li>Flask</li><li>Flask-Limiter</li><li>Resend API</li><li>Render</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://h-24-gn7z.onrender.com/" target="_blank" rel="noopener" class="link-arrow">Live demo →</a>
+          <a href="https://github.com/prajapatiHardik2008/h-24" target="_blank" rel="noopener" class="link-arrow">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">Automation</span>
+          <span class="project-status status-active">Active</span>
+        </div>
+        <h3>NEXA AI</h3>
+        <p>A Python voice assistant with wake-word activation, weather and system control, and generative AI integration — my foundational project, continuously rebuilt as I learn.</p>
+        <ul class="tech-list">
+          <li>Python</li><li>Speech Recognition</li><li>Pollinations.ai</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/prajapatiHardik2008/Nexa" target="_blank" rel="noopener" class="link-arrow">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">Security tooling</span>
+          <span class="project-status status-active">Offline-first</span>
+        </div>
+        <h3>BugDash CLI</h3>
+        <p>A fully offline CLI covering 35+ OWASP vulnerability classes with 100+ categorized payloads, SHA-256 authenticated access, and a color-coded terminal reporting layer.</p>
+        <ul class="tech-list">
+          <li>Python</li><li>SQLite</li><li>OWASP</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="link-arrow">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">Biometrics</span>
+          <span class="project-status status-active">Hardware-linked</span>
+        </div>
+        <h3>H-24 Face Security System</h3>
+        <p>A DeepFace-based access control system with multi-frame verification, adjustable confidence thresholds, auto-lock, and Telegram intruder alerts.</p>
+        <ul class="tech-list">
+          <li>Python</li><li>DeepFace</li><li>Telegram API</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="link-arrow">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">Encryption</span>
+          <span class="project-status status-active">Async</span>
+        </div>
+        <h3>H-24 Hub</h3>
+        <p>A personal cloud storage system built on Telegram Saved Messages, using Fernet AES encryption and async uploads through Pyrogram, wrapped in a Rich terminal UI.</p>
+        <ul class="tech-list">
+          <li>Python</li><li>Pyrogram</li><li>Fernet AES</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="link-arrow">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">Networking</span>
+          <span class="project-status status-archived">v1</span>
+        </div>
+        <h3>WolfNet &amp; Task Manager</h3>
+        <p>A socket-based LAN chat program, alongside a lightweight web app for tracking day-to-day tasks — early foundations for the systems work that followed.</p>
+        <ul class="tech-list">
+          <li>Python</li><li>Sockets</li><li>HTML/CSS/JS</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/prajapatiHardik2008/LAN_Chatting-" target="_blank" rel="noopener" class="link-arrow">Source →</a>
+          <a href="https://github.com/prajapatiHardik2008/TASK_MANAGER" target="_blank" rel="noopener" class="link-arrow">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">CTF write-ups</span>
+          <span class="project-status status-active">Ongoing</span>
+        </div>
+        <h3>picoCTF Solve Archive</h3>
+        <p>A running archive of solved picoCTF challenges — approach notes and methodology across binary exploitation, crypto, forensics, and web exploitation categories.</p>
+        <ul class="tech-list">
+          <li>CTF</li><li>Write-ups</li><li>Forensics</li><li>Crypto</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/prajapatiHardik2008/pico-CTF-solve-challanges" target="_blank" rel="noopener" class="link-arrow">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">Fundamentals</span>
+          <span class="project-status status-archived">v1</span>
+        </div>
+        <h3>Vehicle Service Billing</h3>
+        <p>A Python OOP program that models a vehicle service workflow end-to-end and calculates itemized billing — early groundwork in clean object-oriented design.</p>
+        <ul class="tech-list">
+          <li>Python</li><li>OOP</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/prajapatiHardik2008/vehicle-service-billing" target="_blank" rel="noopener" class="link-arrow">Source →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-head">
+      <p class="eyebrow">Capability map</p>
+      <h2>What I build with</h2>
+      <p class="section-sub">Depth in Python and defensive/offensive security tooling, backed by full-stack fundamentals.</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h3>Core languages</h3>
+        <div class="skill-row">
+          <div class="skill-label"><span>Python</span><span class="skill-pct">92%</span></div>
+          <div class="bar"><div class="bar-fill" style="--w:92%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>C</span><span class="skill-pct">70%</span></div>
+          <div class="bar"><div class="bar-fill" style="--w:70%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>JavaScript</span><span class="skill-pct">65%</span></div>
+          <div class="bar"><div class="bar-fill" style="--w:65%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>HTML / CSS</span><span class="skill-pct">80%</span></div>
+          <div class="bar"><div class="bar-fill" style="--w:80%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>SQL (MySQL / PostgreSQL)</span><span class="skill-pct">60%</span></div>
+          <div class="bar"><div class="bar-fill" style="--w:60%"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Security &amp; systems</h3>
+        <div class="skill-row">
+          <div class="skill-label"><span>Linux</span><span class="skill-pct">78%</span></div>
+          <div class="bar"><div class="bar-fill" style="--w:78%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Networking protocols</span><span class="skill-pct">68%</span></div>
+          <div class="bar"><div class="bar-fill" style="--w:68%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>OWASP / Vuln. classes</span><span class="skill-pct">75%</span></div>
+          <div class="bar"><div class="bar-fill" style="--w:75%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Encryption (AES / Fernet)</span><span class="skill-pct">72%</span></div>
+          <div class="bar"><div class="bar-fill" style="--w:72%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>CTF / Exploitation basics</span><span class="skill-pct">70%</span></div>
+          <div class="bar"><div class="bar-fill" style="--w:70%"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Tools &amp; platforms</h3>
+        <div class="chip-cloud">
+          <span class="chip">Flask</span>
+          <span class="chip">Render</span>
+          <span class="chip">Git / GitHub</span>
+          <span class="chip">SQLite</span>
+          <span class="chip">Pyrogram</span>
+          <span class="chip">DeepFace</span>
+          <span class="chip">Flask-Limiter</span>
+          <span class="chip">Resend API</span>
+          <span class="chip">Rich (CLI UI)</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS + CTF -->
+  <section class="section" id="credentials">
+    <div class="section-head">
+      <p class="eyebrow">Credentials</p>
+      <h2>Certifications &amp; competitive proof</h2>
+      <p class="section-sub">Formal training paired with results from live CTF competitions.</p>
+    </div>
+
+    <div class="cred-grid">
+      <div class="cred-card">
+        <span class="cred-kicker">Certificate</span>
+        <h3>C Language Programming</h3>
+        <p>Enfowiz Solution</p>
+      </div>
+      <div class="cred-card">
+        <span class="cred-kicker">Certificate</span>
+        <h3>CCC (Course on Computer Concepts)</h3>
+        <p>Lok Jagrutti Kendra University</p>
+      </div>
+      <div class="cred-card">
+        <span class="cred-kicker">Certificate</span>
+        <h3>Hackathon Participation</h3>
+        <p>Enfowiz Solution &amp; LJKU</p>
+      </div>
+      <div class="cred-card cred-card--highlight">
+        <span class="cred-kicker">CTF result</span>
+        <h3>picoCTF 2026</h3>
+        <p>Rank #2,669 worldwide · 118 challenges solved</p>
+      </div>
+      <div class="cred-card cred-card--highlight">
+        <span class="cred-kicker">CTF result</span>
+        <h3>Phantom Flags CTF</h3>
+        <p>Rank #10 · Team def unknown_Erorr_24</p>
+      </div>
+      <div class="cred-card">
+        <span class="cred-kicker">Disclosure</span>
+        <h3>HackerOne Clickjacking Report</h3>
+        <p>Verified vulnerability disclosure</p>
+      </div>
+      <div class="cred-card">
+  <span class="cred-kicker">Participation</span>
+  <h3>LJ Innovation Village 2026</h3>
+  <p>LJ University</p>
+</div>
+
+<div class="cred-card">
+  <span class="cred-kicker">Participation</span>
+  <h3>Cyber Mind Space Weekly CTF Challenge</h3>
+  <p>Cyber Mind Space</p>
+</div>
+
+<div class="cred-card">
+  <span class="cred-kicker">Skill Certification</span>
+  <h3>JavaScript </h3>
+  <p>HackerRank</p>
+</div>
+
+<div class="cred-card">
+  <span class="cred-kicker">Completion</span>
+  <h3>Introduction to Kali Linux </h3>
+  <p>Simplilearn</p>
+</div>
+
+<div class="cred-card">
+  <span class="cred-kicker">Skill Certification</span>
+  <h3>Python </h3>
+  <p>HackerRank</p>
+</div>
+
+<div class="cred-card">
+  <span class="cred-kicker">Participation</span>
+  <h3>Hex Hunt 2025 CTF</h3>
+  <p>Lok Jagrutti Kendra University</p>
+</div>
+
+<div class="cred-card">
+  <span class="cred-kicker">Participation</span>
+  <h3>HierroCTF Flag Hunter Cyber Hackathon</h3>
+  <p>Pimpri Chinchwad College of Engineering & Research</p>
+</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-copy">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Have a project, CTF, or a role in mind?</h2>
+        <p class="section-sub">I'm always up for a good security challenge or a collaboration — reach out and I'll get back to you.</p>
+        <div class="contact-links">
+          <a href="https://github.com/prajapatiHardik2008" target="_blank" rel="noopener" class="contact-link">GitHub ↗</a>
+          <a href="https://instagram.com/prajapati__hardik__24" target="_blank" rel="noopener" class="contact-link">Instagram ↗</a>
+          <a href="mailto:hardikprajapati242008@gmail.com" class="contact-link">Email ↗</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Hardik Prajapati. Built with HTML, CSS &amp; a healthy amount of paranoia.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
